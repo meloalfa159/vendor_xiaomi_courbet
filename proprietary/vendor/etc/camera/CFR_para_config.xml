@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<altek_tuning_params>
+    <!-- wide 64 i -->
+    <sensor name="s5kgw3">
+        <sensorId>0</sensorId>
+        <vendorId>3</vendorId>
+        <tuningBin>/vendor/etc/camera/CFR_para_W_V01.bin</tuningBin>
+    </sensor>
+    <!-- wide 64 ii -->
+    <sensor name="s5kgw3">
+        <sensorId>0</sensorId>
+        <vendorId>7</vendorId>
+        <tuningBin>/vendor/etc/camera/CFR_para_W_V01.bin</tuningBin>
+    </sensor>
+    <!-- ultra wide i -->
+    <sensor name="imx355">
+        <sensorId>2</sensorId>
+        <vendorId>1</vendorId>
+        <tuningBin>/vendor/etc/camera/CFR_para_UW_V01.bin</tuningBin>
+    </sensor>
+    <!-- ultra wide ii -->
+    <sensor name="imx355">
+        <sensorId>2</sensorId>
+        <vendorId>7</vendorId>
+        <tuningBin>/vendor/etc/camera/CFR_para_UW_V01.bin</tuningBin>
+    </sensor>
+    <!-- marco i -->
+    <sensor name="s5k5e9">
+        <sensorId>3</sensorId>
+        <vendorId>1</vendorId>
+        <tuningBin>/vendor/etc/camera/CFR_para_MARCO_V01.bin</tuningBin>
+    </sensor>
+    <!-- marco ii -->
+    <sensor name="s5k5e9">
+        <sensorId>3</sensorId>
+        <vendorId>7</vendorId>
+        <tuningBin>/vendor/etc/camera/CFR_para_MARCO_V01.bin</tuningBin>
+    </sensor>
+</altek_tuning_params>

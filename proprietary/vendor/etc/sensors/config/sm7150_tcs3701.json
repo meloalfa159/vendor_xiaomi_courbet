@@ -1,0 +1,546 @@
+{
+  "config":{
+    "hw_platform": ["QRD", "MTP", "DAVINCI", "Surf", "HDK", "COURBET"],
+    "soc_id": ["365", "246", "305", "321", "336", "339", "341", "360"]
+  },
+  "tcs3701_platform":{
+    "owner": "sns_tcs3701",
+    ".config":{
+      "owner": "sns_tcs3701",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "5"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "57"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "89"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vdd"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+    ".als":{
+      "owner": "sns_tcs3701",
+      ".fac_cal":{
+        "owner": "sns_tcs3701",
+        "scale":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "bias":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        }
+      }
+    },
+    ".prox":{
+      "owner": "sns_tcs3701",
+      ".fac_cal":{
+        "owner": "sns_tcs3701",
+        "near_threshold":{ "type": "flt", "ver": "0",
+          "data": "700.0"
+        },
+        "far_threshold":{ "type": "flt", "ver": "0",
+          "data": "680.0"
+        }
+      }
+    },
+    ".coefficient":{
+      "owner": "sns_tcs3701",
+      "0":{ "type": "flt", "ver": "5",
+        "data": "3.2434"
+      },
+      "1":{ "type": "flt", "ver": "5",
+        "data": "1.031"
+      },
+      "2":{ "type": "flt", "ver": "5",
+        "data": "-0.815"
+      },
+      "3":{ "type": "flt", "ver": "5",
+        "data": "-0.857"
+      },
+      "4":{ "type": "flt", "ver": "5",
+        "data": "1.0"
+      },
+      "5":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "6":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "7":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "8":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "9":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "10":{ "type": "flt", "ver": "0",
+        "data": "600.0"
+      },
+      "11":{ "type": "flt", "ver": "1",
+        "data": "2047.0"
+      }
+    },
+    ".coefficient_panel2":{
+      "owner": "sns_tcs3701",
+      "0":{ "type": "flt", "ver": "1",
+        "data": "3.3573"
+      },
+      "1":{ "type": "flt", "ver": "1",
+        "data": "1.015"
+      },
+      "2":{ "type": "flt", "ver": "1",
+        "data": "-0.749"
+      },
+      "3":{ "type": "flt", "ver": "1",
+        "data": "-0.707"
+      },
+      "4":{ "type": "flt", "ver": "1",
+        "data": "0"
+      },
+      "5":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "6":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "7":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "8":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "9":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "10":{ "type": "flt", "ver": "0",
+        "data": "600.0"
+      },
+      "11":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      }
+    },
+    ".oled_cal_factor":{
+      "owner": "sns_tcs3701",
+      "clear_a":{ "type": "flt", "ver": "0",
+        "data": "-30.848673"
+      },
+      "clear_b":{ "type": "flt", "ver": "0",
+        "data": "39.038770"
+      },
+      "clear_c":{ "type": "flt", "ver": "0",
+        "data": "13.552272"
+      },
+      "red_a":{ "type": "flt", "ver": "0",
+        "data": "-20.970832"
+      },
+      "red_b":{ "type": "flt", "ver": "0",
+        "data": "60.639359"
+      },
+      "red_c":{ "type": "flt", "ver": "0",
+        "data": "-6.219479"
+      },
+      "green_a":{ "type": "flt", "ver": "0",
+        "data": "-16.975607"
+      },
+      "green_b":{ "type": "flt", "ver": "0",
+        "data": "47.283213"
+      },
+      "green_c":{ "type": "flt", "ver": "0",
+        "data": "-0.510646"
+      },
+      "blue_a":{ "type": "flt", "ver": "0",
+        "data": "-6.148283"
+      },
+      "blue_b":{ "type": "flt", "ver": "0",
+        "data": "47.000924"
+      },
+      "blue_c":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      }
+    },
+    ".oled_cal_factor_90hz":{
+      "owner": "sns_tcs3701",
+      "clear_a":{ "type": "flt", "ver": "0",
+        "data": "-30.848673"
+      },
+      "clear_b":{ "type": "flt", "ver": "0",
+        "data": "39.038770"
+      },
+      "clear_c":{ "type": "flt", "ver": "0",
+        "data": "13.552272"
+      },
+      "red_a":{ "type": "flt", "ver": "0",
+        "data": "-20.970832"
+      },
+      "red_b":{ "type": "flt", "ver": "0",
+        "data": "60.639359"
+      },
+      "red_c":{ "type": "flt", "ver": "0",
+        "data": "-6.219479"
+      },
+      "green_a":{ "type": "flt", "ver": "0",
+        "data": "-16.975607"
+      },
+      "green_b":{ "type": "flt", "ver": "0",
+        "data": "47.283213"
+      },
+      "green_c":{ "type": "flt", "ver": "0",
+        "data": "-0.510646"
+      },
+      "blue_a":{ "type": "flt", "ver": "0",
+        "data": "-6.148283"
+      },
+      "blue_b":{ "type": "flt", "ver": "0",
+        "data": "47.000924"
+      },
+      "blue_c":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      }
+    },
+    ".oled_fca_cal_factor_60hz":{
+      "owner": "sns_tcs3701",
+      "clear_a":{ "type": "flt", "ver": "2",
+        "data": "183.000000"
+      },
+      "clear_b":{ "type": "flt", "ver": "2",
+        "data": "80.000000"
+      },
+      "clear_c":{ "type": "flt", "ver": "2",
+        "data": "82.000000"
+      },
+      "red_a":{ "type": "flt", "ver": "2",
+        "data": "45.500000"
+      },
+      "red_b":{ "type": "flt", "ver": "2",
+        "data": "10.914573"
+      },
+      "red_c":{ "type": "flt", "ver": "2",
+        "data": "4.609200"
+      },
+      "green_a":{ "type": "flt", "ver": "2",
+        "data": "4.929389"
+      },
+      "green_b":{ "type": "flt", "ver": "2",
+        "data": "2.757911"
+      },
+      "green_c":{ "type": "flt", "ver": "2",
+        "data": "8.563056"
+      },
+      "blue_a":{ "type": "flt", "ver": "2",
+        "data": "3.673730"
+      },
+      "blue_b":{ "type": "flt", "ver": "2",
+        "data": "3.978100"
+      },
+      "blue_c":{ "type": "flt", "ver": "2",
+        "data": "2.215734"
+      }
+    },
+    ".oled_fca_cal_factor_90hz":{
+      "owner": "sns_tcs3701",
+      "clear_a":{ "type": "flt", "ver": "2",
+        "data": "183.000000"
+      },
+      "clear_b":{ "type": "flt", "ver": "2",
+        "data": "79.500000"
+      },
+      "clear_c":{ "type": "flt", "ver": "2",
+        "data": "82.500000"
+      },
+      "red_a":{ "type": "flt", "ver": "2",
+        "data": "46.000000"
+      },
+      "red_b":{ "type": "flt", "ver": "2",
+        "data": "11.193192"
+      },
+      "red_c":{ "type": "flt", "ver": "2",
+        "data": "4.693244"
+      },
+      "green_a":{ "type": "flt", "ver": "2",
+        "data": "5.093248"
+      },
+      "green_b":{ "type": "flt", "ver": "2",
+        "data": "2.727248"
+      },
+      "green_c":{ "type": "flt", "ver": "2",
+        "data": "10.041696"
+      },
+      "blue_a":{ "type": "flt", "ver": "2",
+        "data": "4.129889"
+      },
+      "blue_b":{ "type": "flt", "ver": "2",
+        "data": "4.551216"
+      },
+      "blue_c":{ "type": "flt", "ver": "2",
+        "data": "2.448837"
+      }
+    },
+    ".oled_pwm_cal_factor_60hz":{
+      "owner": "sns_tcs3701",
+      "c_mean":{ "type": "flt", "ver": "2",
+        "data": "24.107955"
+      },
+      "r_mean":{ "type": "flt", "ver": "2",
+        "data": "9.707386"
+      },
+      "g_mean":{ "type": "flt", "ver": "2",
+        "data": "11.116477"
+      },
+      "b_mean":{ "type": "flt", "ver": "2",
+        "data": "5.161932"
+      },
+      "c_mag":{ "type": "flt", "ver": "2",
+        "data": "11.544367"
+      },
+      "r_mag":{ "type": "flt", "ver": "2",
+        "data": "5.009178"
+      },
+      "g_mag":{ "type": "flt", "ver": "2",
+        "data": "5.303951"
+      },
+      "b_mag":{ "type": "flt", "ver": "2",
+        "data": "2.890045"
+      }
+    },
+    ".oled_pwm_cal_factor_90hz":{
+      "owner": "sns_tcs3701",
+      "c_mean":{ "type": "flt", "ver": "3",
+        "data": "23.750000"
+      },
+      "r_mean":{ "type": "flt", "ver": "3",
+        "data": "9.517045"
+      },
+      "g_mean":{ "type": "flt", "ver": "3",
+        "data": "11.136364"
+      },
+      "b_mean":{ "type": "flt", "ver": "3",
+        "data": "4.997159"
+      },
+      "c_mag":{ "type": "flt", "ver": "3",
+        "data": "13.813105"
+      },
+      "r_mag":{ "type": "flt", "ver": "3",
+        "data": "5.944194"
+      },
+      "g_mag":{ "type": "flt", "ver": "3",
+        "data": "6.413233"
+      },
+      "b_mag":{ "type": "flt", "ver": "3",
+        "data": "3.461178"
+      }
+    },
+    ".prox_cal_offset":{
+      "owner": "sns_tcs3701",
+      "prox_offset_l":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "prox_offset_h":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      }
+    },
+    ".under_oled_para":{
+      "owner": "sns_tcs3701",
+      "ps_trigger_gpio_num":{ "type": "flt", "ver": "0",
+        "data": "127.0"
+      },
+      "ps_gpio_is_chip_pin":{ "type": "flt", "ver": "0",
+        "data": "1.0"
+      },
+      "als_trigger_gpio_num":{ "type": "flt", "ver": "0",
+        "data": "127.0"
+      },
+      "als_gpio_is_chip_pin":{ "type": "flt", "ver": "0",
+        "data": "1.0"
+      },
+      "gpio_delay_us":{ "type": "flt", "ver": "0",
+        "data": "4738.0"
+      },
+      "gpio_width_us":{ "type": "flt", "ver": "0",
+        "data": "20.0"
+      },
+      "ps_vsync_trigger_count":{ "type": "flt", "ver": "0",
+        "data": "2.0"
+      },
+      "als_vsync_trigger_count":{ "type": "flt", "ver": "0",
+        "data": "1.0"
+      }
+    },
+    ".60hz_max_cmp_factor":{
+      "owner": "sns_tcs3701",
+      "max_c":{ "type": "flt", "ver": "0",
+        "data": "999.0"
+      },
+      "max_r":{ "type": "flt", "ver": "0",
+        "data": "999.0"
+      },
+      "max_g":{ "type": "flt", "ver": "0",
+        "data": "999.0"
+      },
+      "max_b":{ "type": "flt", "ver": "0",
+        "data": "999.0"
+      }
+    },
+    ".90hz_max_cmp_factor":{
+      "owner": "sns_tcs3701",
+      "max_c":{ "type": "flt", "ver": "0",
+        "data": "999.0"
+      },
+      "max_r":{ "type": "flt", "ver": "0",
+        "data": "999.0"
+      },
+      "max_g":{ "type": "flt", "ver": "0",
+        "data": "999.0"
+      },
+      "max_b":{ "type": "flt", "ver": "0",
+        "data": "999.0"
+      }
+    },
+    ".60hz_step_cmp_factor":{
+      "owner": "sns_tcs3701",
+      "0":{ "type": "flt", "ver": "0",
+        "data": "0.263804509"
+      },
+      "1":{ "type": "flt", "ver": "0",
+        "data": "0.14896641"
+      },
+      "2":{ "type": "flt", "ver": "0",
+        "data": "0.090213093"
+      },
+      "3":{ "type": "flt", "ver": "0",
+        "data": "0.059493222"
+      },
+      "4":{ "type": "flt", "ver": "0",
+        "data": "93.82638889"
+      },
+      "5":{ "type": "flt", "ver": "0",
+        "data": "54.57777778"
+      },
+      "6":{ "type": "flt", "ver": "0",
+        "data": "28.47638889"
+      },
+      "7":{ "type": "flt", "ver": "0",
+        "data": "16.82777778"
+      }
+    },
+    ".90hz_step_cmp_factor":{
+      "owner": "sns_tcs3701",
+      "0":{ "type": "flt", "ver": "0",
+        "data": "0.266851941"
+      },
+      "1":{ "type": "flt", "ver": "0",
+        "data": "0.150815359"
+      },
+      "2":{ "type": "flt", "ver": "0",
+        "data": "0.091553052"
+      },
+      "3":{ "type": "flt", "ver": "0",
+        "data": "0.060312809"
+      },
+      "4":{ "type": "flt", "ver": "0",
+        "data": "89.19034091"
+      },
+      "5":{ "type": "flt", "ver": "0",
+        "data": "54.35795455"
+      },
+      "6":{ "type": "flt", "ver": "0",
+        "data": "28.27556818"
+      },
+      "7":{ "type": "flt", "ver": "0",
+        "data": "18.61647727"
+      }
+    },
+    ".60hz_panel2_step_cmp_factor":{
+      "owner": "sns_tcs3701",
+      "0":{ "type": "flt", "ver": "0",
+        "data": "0.32775"
+      },
+      "1":{ "type": "flt", "ver": "0",
+        "data": "0.193637"
+      },
+      "2":{ "type": "flt", "ver": "0",
+        "data": "0.113083"
+      },
+      "3":{ "type": "flt", "ver": "0",
+        "data": "0.05395"
+      },
+      "4":{ "type": "flt", "ver": "0",
+        "data": "146.4489"
+      },
+      "5":{ "type": "flt", "ver": "0",
+        "data": "89.40625"
+      },
+      "6":{ "type": "flt", "ver": "0",
+        "data": "54.19602"
+      },
+      "7":{ "type": "flt", "ver": "0",
+        "data": "21.21875"
+      }
+    },
+    ".90hz_panel2_step_cmp_factor":{
+      "owner": "sns_tcs3701",
+      "0":{ "type": "flt", "ver": "0",
+        "data": "0.327277"
+      },
+      "1":{ "type": "flt", "ver": "0",
+        "data": "0.193995"
+      },
+      "2":{ "type": "flt", "ver": "0",
+        "data": "0.112838"
+      },
+      "3":{ "type": "flt", "ver": "0",
+        "data": "0.053904"
+      },
+      "4":{ "type": "flt", "ver": "0",
+        "data": "147.0085"
+      },
+      "5":{ "type": "flt", "ver": "0",
+        "data": "90.30114"
+      },
+      "6":{ "type": "flt", "ver": "0",
+        "data": "54.14489"
+      },
+      "7":{ "type": "flt", "ver": "0",
+        "data": "21.4517"
+      }
+    }
+  }
+}
