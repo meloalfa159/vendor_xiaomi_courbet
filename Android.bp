@@ -2598,7 +2598,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libmpbase",
+	name: "libmpbase_vendor",
+	stem: "libmpbase",
 	owner: "xiaomi",
 	strip: {
 		none: true,
