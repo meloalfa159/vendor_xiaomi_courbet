@@ -201,6 +201,7 @@ PRODUCT_PACKAGES += \
     libhfp \
     libsndmonitor \
     libspkrprot \
+    libxlog \
     com.qti.sensor.courbet_imx355 \
     com.qti.sensor.courbet_imx471_front \
     com.qti.sensor.courbet_s5k5e9 \
