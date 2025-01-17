@@ -277,6 +277,8 @@ PRODUCT_PACKAGES += \
     libalCFR \
     libalLDC \
     libalhLDC \
+    libarcdualcamsat \
+    libarcsat \
     libarcsoft_beautyshot \
     libarcsoft_distortion_correction \
     libarcsoft_dualcam_refocus \
