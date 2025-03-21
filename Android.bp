@@ -72,6 +72,48 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libdapparamstorage",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+	        android_arm: {
+	                srcs: ["proprietary/vendor/lib/libdapparamstorage.so"],
+	                shared_libs: ["libc++", "libcutils", "liblog", "libutils"],
+	        },
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libdapparamstorage.so"],
+			shared_libs: ["libc++", "libcutils", "liblog", "libutils"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.dolby.hardware.dms@2.0",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+	        android_arm: {
+	                srcs: ["proprietary/vendor/lib/vendor.dolby.hardware.dms@2.0.so"],
+	                shared_libs: ["libc++", "libcutils", "libhidlbase", "liblog", "libutils"],
+	        },
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/vendor.dolby.hardware.dms@2.0.so"],
+			shared_libs: ["libc++", "libcutils", "libhidlbase", "liblog", "libutils"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "btaudio_offload_if",
 	owner: "xiaomi",
 	strip: {
