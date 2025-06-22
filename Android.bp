@@ -4,6 +4,7 @@
 
 soong_namespace {
 	imports: [
+		"device/xiaomi/courbet",
 		"vendor/xiaomi/sm6150-common",
 	],
 }
@@ -139,6 +140,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/hw/audio.primary.sm6150.so"],
+	                shared_libs: ["libaudioroute-v34"],
 		},
 	},
 	compile_multilib: "32",
@@ -293,6 +295,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libaudioroute_ext.so"],
+			shared_libs: ["libaudioroute-v34"],
 		},
 	},
 	compile_multilib: "32",
