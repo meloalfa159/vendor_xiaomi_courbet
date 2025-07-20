@@ -6,6 +6,12 @@ soong_namespace {
 	imports: [
 		"device/xiaomi/courbet",
 		"vendor/xiaomi/sm6150-common",
+		"device/xiaomi/sm6150-common",
+		"hardware/qcom-caf/sm8150",
+		"hardware/qcom-caf/wlan",
+		"hardware/xiaomi",
+		"vendor/qcom/opensource/dataservices",
+		"vendor/qcom/opensource/display",
 	],
 }
 
